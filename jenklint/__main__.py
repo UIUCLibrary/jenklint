@@ -1,4 +1,4 @@
-from jenlint import lint
+from jenklint import lint
 
 
 def main() -> None:
