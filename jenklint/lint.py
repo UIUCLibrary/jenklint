@@ -69,7 +69,7 @@ def get_crumb(jenkins_url: str) -> str:
     assert len(crumb_tags) == 1
 
     crumb_tag = crumb_tags[0].firstChild
-    assert len(crumb_tag.data) == 32
+    assert len(crumb_tag.data) == 32 or len(crumb_tag.data) == 64
 
     return str(crumb_tag.data)
 
